@@ -122,7 +122,7 @@ def UpStud():
 
         if result:
 
-            stud_name = result
+            stud_name = result[0]
             statement = "UPDATE student SET stud_name = %s WHERE stud_id = %s"
             cursor.execute(statement, (name, stud))
            
