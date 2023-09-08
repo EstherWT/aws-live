@@ -86,7 +86,7 @@ def GetStud():
         stud = request.form['search']
 
         # Corrected SQL statement with placeholder
-        statement = "SELECT stud_id, stud_name FROM student WHERE stud_name = %s"
+        statement = "SELECT stud_id, stud_name FROM student WHERE stud_id = %s"
         cursor = db_conn.cursor()
         cursor.execute(statement, (stud,))
         
