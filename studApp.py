@@ -123,8 +123,11 @@ def UpStud():
         if result:
 
             stud_name = result[0]
-            statement = "UPDATE student SET stud_name = %s WHERE stud_id = %s"
-            cursor.execute(statement, (name, stud))
+            statement_1 = "UPDATE student"
+            statement_2 = "SET stud_name = %s WHERE stud_id = %s"
+
+            cursor.execute(statement_1)
+            cursor.execute(statement_2, (name, stud))
            
             return render_template('updateStudent.html', new=name, id=stud, old=stud_name)
         else:
