@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Student Information</title>
+</head>
+<center>
+	<font color="black" size="4" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue">Student Database</h1>
+
+		<body bgcolor="lightgrey">
+
+			<form action="/addstud" autocomplete="on" method = "POST" enctype="multipart/form-data">
+       
+		  		Employee ID:<br> <input style="height:25px;font-size:14pt; color:grey;" type="number" name="stud_id" autofocus size="40"><br><br>
+
+		  		First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="stud_name" ><br><br>
+
+		  		Image: <input type=file name="stud_image_file" style="height:25px;font-size:14pt;color:grey;"> <br><br>
+
+		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
+
+			</form>
+
+			<br><br>
+
+			<form action="/searchstud" auto ="on" method="POST" enctype="multipart/form-data">
+				<input style="height:25px; font-size: 14pt; color:grey;" type="text" name="search" placeholder="Insert ID here to search"> 
+				<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">Search with ID</button>
+			</form>
+		</body>
+
+	</font>
+</center>
+</html>
+
